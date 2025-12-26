@@ -2,253 +2,452 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Klivio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
 </head>
 
-
 <body>
-
-    <header>
-
-        <nav>
-            <img src="/version_css/Klivio-CSS/assets/img/logo.png" alt="logo de Klivio" id="logo_nav">
-            <ul class="formations">
+    <header class="header">
+        <img src="/version_css/Klivio-CSS/assets/img/logo.png" alt="logo de Klivio" class="header__nav-img" />
+        <nav class="header__nav">
+            <ul class="header__nav-liste">
                 <li>Les formations</li>
             </ul>
-            <div class="barre_de_recherche">
-                <label id="site-search"></label>
-                <input id="search_bar" name="q" placeholder="Rechercher" class="text_blanc">
-                <img src="Klivio-CSS/assets/icons/search.svg" alt="search logo">
+            <div class="header__nav-search">
+                <label id="header__nav-label"></label>
+                <input id="search" placeholder="Rechercher" class="header__nav-input" />
+                <div class="header__nav-logo">
+                    <img src="/version_css/Klivio-CSS/assets/icons/search.svg" alt="loupe" />
+                </div>
             </div>
-            <button class="boutton_connexion_header" type="button">Connexion</button>
-            <button class="boutton_inscription_header" type="button">Inscription</button>
+            <div>
+                <button class="header__nav-boutons" type="button">Connexion</button>
+                <button class="header__nav-boutons" type="button">Inscription</button>
+            </div>
         </nav>
-
-        <div class="hero">
-            <h1>KLIVIO, L'ALLIÉ DE VOTRE PROGRESSION</h1>
-            <h2>LES MEILLEURES FORMATIONS SUR LE DÉVELOPPEMENT PERSONNEL</h2>
-            <button class="boutton_en_savoir_plus" type="button">En savoir plus</button>
-            <img src="/version_css/Klivio-CSS/assets/img/bg-header.png" alt="image d'une dame concentrée">
-        </div>
-
     </header>
 
-    <main>
+    <main class="main">
+        <div class="hero">
+            <h1 class="hero__titre">Klivio, l'allié de votre progression</h1>
+            <h2 class="hero__soustitre">Les meilleures formations sur le développement personnel</h2>
+            <button class="hero__bouton" type="button">
+                En savoir plus
+            </button>
+        </div>
+        <div class="contenu">
+            <div class="contenu__formations">
+                <h2 class="contenu__formations-titre">Les formations populaires</h2>
+                <div class="contenu__formations-cartes">
+                    <div class="contenu__formations-carte">
+                        <img src="/version_css/Klivio-CSS/assets/img/img-course.png" 
+                        class="contenu__formations-image"
+                        alt="image verte" />
+                        <div class="contenu__formations-prix">
+                            <p class="contenu__formations-remise">15,99 €</p>
+                            <p class="contenu__formations-valeur">60 €</p>
+                        </div>
+                        <h2 class="contenu__formations-soustitre">Parler en public</h2>
+                        <p class="contenu__formations-info">Sonia Lefèvre | Coach prise de parole</p>
+                        <div class="contenu__formations-evaluations">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                        </div>
+                        <p class="contenu__formations-texte">
+                            Gagnez en aisance et captez votre auditoire
+                        </p>
+                    </div>
 
-        <div class="formations_populaires">
-            <h2>Les formations populaires</h2>
+                    <div class="contenu__formations-carte">
+                        <img src="/version_css/Klivio-CSS/assets/img/img-course.png" 
+                        class="contenu__formations-image"
+                        alt="image verte" />
+                        <div class="contenu__formations-prix">
+                            <p class="contenu__formations-remise">15,99 €</p>
+                            <p class="contenu__formations-valeur">60 €</p>
+                        </div>
+                        <h2 class="contenu__formations-soustitre">Gérer le stress</h2>
+                        <p class="contenu__formations-info">Lucie Garnier | Formatrice</p>
+                        <div class="contenu__formations-evaluations">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilefade.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile moins brillante">
+                        </div>
+                        <p class="contenu__formations-texte">
+                            Apprenez à rester serein face aux défis
+                        </p>
+                    </div>
 
-            <div class="card">
-                <img src="/version_css/Klivio-CSS/assets/img/img-course.png" alt="imge verte">
-                <h2>15,99 €</h2>
-                <p>60 €</p>
-                <h3>Parler en public</h3>
-                <p>Sonia Lefèvre | Coach prise de parole</p>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <p>Gagnez en aisance et captez votre auditoire</p>
+                    <div class="contenu__formations-carte">
+                        <img src="/version_css/Klivio-CSS/assets/img/img-course.png" 
+                        class="contenu__formations-image"
+                        alt="image verte" />
+                        <div class="contenu__formations-prix">
+                            <p class="contenu__formations-remise">15,99 €</p>
+                            <p class="contenu__formations-valeur">60 €</p>
+                        </div>
+                        <h2 class="contenu__formations-soustitre">Travailler en équipe</h2>
+                        <p class="contenu__formations-info">David Moreau | Expert</p>
+                        <div class="contenu__formations-evaluations">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                        </div>
+                        <p class="contenu__formations-texte">
+                            Collaborez efficacement, même à distance
+                        </p>
+                    </div>
+
+                    <div class="contenu__formations-carte">
+                        <img src="/version_css/Klivio-CSS/assets/img/img-course.png" 
+                        class="contenu__formations-image"
+                        alt="image verte" />
+                        <div class="contenu__formations-prix">
+                            <p class="contenu__formations-remise">15,99 €</p>
+                            <p class="contenu__formations-valeur">60 €</p>
+                        </div>
+                        <h2 class="contenu__formations-soustitre">Gérer son temps</h2>
+                        <p class="contenu__formations-info">Claire Dumas | Coach organisation</p>
+                        <div class="contenu__formations-evaluations">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilefade.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile moins brillante">
+                        </div>
+                        <p class="contenu__formations-texte">
+                            Optimisez vos journées et gagnez en efficacité
+                        </p>
+                    </div>
+                </div>
+                <button class="contenu__formations-bouton">
+                    Voir plus de formations
+                </button>
             </div>
 
-            <div class="card">
-                <img src="/version_css/Klivio-CSS/assets/img/img-course.png" alt="imge verte">
-                <h2>15,99 €</h2>
-                <p>60 €</p>
-                <h3>Gérer le stress</h3>
-                <p>Lucie Garnier | Formatrice</p>
-                <!--NE PAS OUBLIER DE METTRE LA 5EME ETOILE EN OPACITE FAIBLE-->
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <p>Apprenez à rester serein face aux défis</p>
+        <div class="contenu__recent">
+            <h2 class="contenu__recent-titre">Les formations récentes</h2>
+            <div class="contenu__recent-cartes">
+            <div class="contenu__recent-carte">
+                <img src="/version_css/Klivio-CSS/assets/img/img-course.png" 
+                class="contenu__recent-image"
+                alt="image verte" />
+                <div class="contenu__recent-prix">
+                <p class="contenu__recent-remise">15,99 €</p>
+                <p class="contenu__recent-valeur">60 €</p>
+                </div>
+                <h2 class="contenu__recent-soustitre">Mieux communiquer</h2>
+                <p class="contenu__recent-info">Julien Martel | Coach en comm.</p>
+                <div class="contenu__recent-evaluations">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                        </div>
+                <p class="contenu__recent-texte">
+                    Améliorez vos échanges et votre impact relationnel
+                </p>
             </div>
 
-            <div class="card">
-                <img src="/version_css/Klivio-CSS/assets/img/img-course.png" alt="imge verte">
-                <h2>15,99 €</h2>
-                <p>60 €</p>
-                <h3>Travailler en équipe</h3>
-                <p>David Moreau | Expert</p>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <p>Collaborez efficacement, même à distance</p>
+            <div class="contenu__recent-carte">
+                <img src="/version_css/Klivio-CSS/assets/img/img-course.png" 
+                class="contenu__recent-image"
+                alt="image verte">
+                <div class="contenu__recent-prix">
+                <p class="contenu__recent-remise">15,99 €</p>
+                <p class="contenu__recent-valeur">60 €</p>
+                </div>
+                <h2 class="contenu__recent-soustitre">Maîtriser ses émotions</h2>
+                <p class="contenu__recent-info">Amel Benali | Psy. du travail</p>
+                <div class="contenu__recent-evaluations">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                        </div>
+                <p class="contenu__recent-texte">
+                    Développez calme et intelligence émotionnelle
+                </p>
             </div>
 
-            <div class="card">
-                <img src="/version_css/Klivio-CSS/assets/img/img-course.png" alt="imge verte">
-                <h2>15,99 €</h2>
-                <p>60 €</p>
-                <h3>Gérer son temps</h3>
-                <p>Claire Dumas | Coach organisation</p>
-                <!--NE PAS OUBLIER DE METTRE LA 5EME ETOILE EN OPACITE FAIBLE-->
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <p>Optimisez vos journées et gagnez en efficacité</p>
+            <div class="contenu__recent-carte">
+                <img src="/version_css/Klivio-CSS/assets/img/img-course.png" 
+                class="contenu__recent-image"
+                alt="image verte">
+                <div class="contenu__recent-prix">
+                <p class="contenu__recent-remise">15,99 €</p>
+                <p class="contenu__recent-valeur">60 €</p>
+                </div>
+                <h2 class="contenu__recent-soustitre">Résoudre les problèmes</h2>
+                <p class="contenu__recent-info">Thomas Rivière | Expert</p>
+                <div class="contenu__recent-evaluations">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilefade.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile moins brillante">
+                        </div>
+                <p class="contenu__recent-texte">
+                    Analysez, décidez et trouvez des solutions durables
+                </p>
             </div>
-            <button class="boutton_voir_plus_de_formations_bleu" type="button">Voir plus de formations</button>
+
+            <div class="contenu__recent-carte">
+                <img src="/version_css/Klivio-CSS/assets/img/img-course.png"
+                class="contenu__recent-image"
+                alt="image verte">
+                <div class="contenu__recent-prix">
+                <p class="contenu__recent-remise">15,99 €</p>
+                <p class="contenu__recent-valeur">60 €</p>
+                </div>
+                <h2 class="contenu__recent-soustitre">Leadership positif</h2>
+                <p class="contenu__recent-info">Marc Nguyen | Consultant</p>
+                <div class="contenu__recent-evaluations">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilefade.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile moins brillante">
+                        </div>
+                <p class="contenu__recent-texte">
+                    Inspirez, motivez et fédérez votre équipe
+                </p>
+            </div>
+            <button class="contenu__recent-bouton">
+                Voir plus de formations
+            </button>
+        </div>
         </div>
 
-        <div class="formations_récentes">
-            <h2>Les formations récentes</h2>
-
-            <div class="card2">
-                <img src="/version_css/Klivio-CSS/assets/img/img-course.png" alt="imge verte">
-                <h2>15,99 €</h2>
-                <p>60 €</p>
-                <h3>Mieux communiquer</h3>
-                <p>Julien Martel | Coach en comm.</p>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <p>Améliorez vos échanges et votre impact relationnel</p>
+        <div class="contenu__avis">
+            <h2 class="contenu__avis-titre">Avis Clients</h2>
+            <div class="contenu__avis-cartes">
+            <div class="contenu__avis-carte">
+                <img src="/version_css/Klivio-CSS/assets/img/juliette.png" 
+                class="contenu__avis-image"
+                alt="photo de la cliente Juliette">
+                <h2 class="contenu__avis-soustitre">Juliette</h2>
+                <div class="contenu__recent-evaluations">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                        </div>
+                <p class="contenu__avis-texte">
+                    J’ai trouvé le parcours très bien structuré : vidéos courtes,
+                    quizzes pertinents et projets pratiques qui m’ont permis d’appliquer
+                    immédiatement les notions. L’interface est claire et la progression
+                    est motivante — parfait pour se former en autonomie.
+                </p>
             </div>
 
-            <div class="card2">
-                <img src="/version_css/Klivio-CSS/assets/img/img-course.png" alt="imge verte">
-                <h2>15,99 €</h2>
-                <p>60 €</p>
-                <h3>Maîtriser ses émotions</h3>
-                <p>Amel Benali | Psy. du travail</p>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <p>Développez calme et intelligence émotionnelle</p>
+            <div class="contenu__avis-carte">
+                <img src="/version_css/Klivio-CSS/assets/img/camille.png" 
+                class="contenu__avis-image"
+                alt="photo de la cliente Camille">
+                <h2 class="contenu__avis-soustitre">Camille</h2>
+                <div class="contenu__recent-evaluations">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                            <img src="/version_css/Klivio-CSS/assets/icons/etoilejaune.svg"
+                                class="contenu__formations-etoile" 
+                                alt="Etoile brillante">
+                        </div>
+                <p class="contenu__avis-texte">
+                    Bon équilibre entre théorie et pratique. Les chapitres sont
+                    détaillés, et le support et les corrections automatiques ont
+                    vraiment aidé. Idéal pour démarrer et progresser rapidement.
+                </p>
             </div>
-
-            <div class="card2">
-                <img src="/version_css/Klivio-CSS/assets/img/img-course.png" alt="imge verte">
-                <h2>15,99 €</h2>
-                <p>60 €</p>
-                <h3>Résoudre les problèmes</h3>
-                <p>Thomas Rivière | Expert</p>
-                <!--NE PAS OUBLIER DE METTRE LA 5EME ETOILE EN OPACITE FAIBLE-->
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <p>Analysez, décidez et trouvez des solutions durables</p>
             </div>
-
-            <div class="card2">
-                <img src="/version_css/Klivio-CSS/assets/img/img-course.png" alt="imge verte">
-                <h2>15,99 €</h2>
-                <p>60 €</p>
-                <h3>Leadership positif</h3>
-                <p>Marc Nguyen | Consultant</p>
-                <!--NE PAS OUBLIER DE METTRE LA 5EME ETOILE EN OPACITE FAIBLE-->
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <p>Inspirez, motivez et fédérez votre équipe</p>
             </div>
-            <button class="boutton_voir_plus_de_formations_blanc" type="button">Voir plus de formations</button>
-        </div>
+    <div class="contenu__avantages">
+        <div class="contenu__avantages-group">
+                <h2 class="contenu__avantages-titre">Les avantages Klivio</h2>
 
-        <div class="avis_clients">
-            <h1>AVIS CLIENTS</h1>
-
-            <div class="card_clients">
-                <img src="/version_css/Klivio-CSS/assets/img/juliette.png" alt="photo de la cliente Juliette">
-                <h3>Juliette</h3>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <p>J’ai trouvé le parcours très bien structuré :
-                    vidéos courtes, quizzes pertinents et projets
-                    pratiques qui m’ont permis d’appliquer immédiatement
-                    les notions. L’interface est claire et la progression
-                    est motivante — parfait pour se former en autonomie.</p>
-            </div>
-
-            <div class="card_clients">
-                <img src="/version_css/Klivio-CSS/assets/img/camille.png" alt="photo de la cliente Camille">
-                <h3>Camille</h3>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <p>Bon équilibre entre théorie et pratique. Les chapitres
-                    sont détaillés, et le support et les corrections automatiques
-                    ont vraiment aidé. Idéal pour démarrer et progresser rapidement.</p>
-            </div>
-
-            <div class="avantages_klivio">
-                <h1>LES AVANTAGES KLIVIO</h1>
-
-                <ul class="list_avantages">
+                <ul class="contenu__avantages-liste">
                     <li id="li1">Suivi de sa progression</li>
                     <li id="li2">Exercices et QCM pour la mise en pratique</li>
                     <li id="li3">Possibilité de télécharger/imprimer les formations</li>
                     <li id="li4">Contenu qualitatif et vérifié</li>
                     <li id="li5">Suivi en autonomie, 24h/24, 7j/7</li>
-                    <li id="li6">Espaces d’échanges dédiés pour poser ses questions sur les formations</li>
+                    <li id="li6">
+                        Espaces d’échanges dédiés pour poser ses questions sur les
+                        formations
+                    </li>
                 </ul>
-                <img src="/version_css/Klivio-CSS/assets/img/avantages.png" alt="fille qui souris à l'ordinateur">
-            </div>
+        </div>
+                <img src="/version_css/Klivio-CSS/assets/img/avantages.png" alt="fille qui souris à l'ordinateur" />
 
             <div class="créer_formations">
-                <h1>CRÉEZ VOS FORMATIONS AVEC KLIVIO</h1>
-                <ul>
-                    <li id="li7">Commission unique, au pourcentage sur les ventes</li>
-                    <li id="li8">Mise en avant sur la plateforme</li>
-                    <li id="li9">Contrôle total sur le cours : contenu, prix</li>
-                    <li id="li10">Fonctionnalités avancées : espace commentaires,
-                        possibilité de créer des QCM, exercices, vidéos,
-                        téléchargement en PDF, suivi des statistiques des
-                        ventes, gestion de codes promos, gestion de la facturation,
-                        etc</li>
-                    <li id="li11">Le professeur reste 100% propriétaire de sa formation
-                        et conserve tous ses droits d’auteur</li>
-                </ul>
+                <div class="become_author">
+                    <img src="assets/img/become-author.png" alt="bureau vue du haut" />
+                </div>
+                <div class="avantage_formation">
+                    <div class="titre_creer_formation">
+    </div>
+                        <h1>Créez vos formations avec Klivio</h1>
+                    </div>
+                    <div class="list_avantages_formation">
+                        <ul>
+                            <li id="li7">
+                                Commission unique, au pourcentage sur les ventes
+                            </li>
+                            <li id="li8">Mise en avant sur la plateforme</li>
+                            <li id="li9">Contrôle total sur le cours : contenu, prix</li>
+                            <li id="li10">
+                                Fonctionnalités avancées : espace commentaires, possibilité de
+                                créer des QCM, exercices, vidéos, téléchargement en PDF, suivi
+                                des statistiques des ventes, gestion de codes promos, gestion
+                                de la facturation, etc
+                            </li>
+                            <li id="li11">
+                                Le professeur reste 100% propriétaire de sa formation et
+                                conserve tous ses droits d’auteur
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
 
             <div class="a_propos_de_klivio">
                 <h1>À PROPOS DE KLIVIO</h1>
-                <p>Chez Klivio, nous défendons des valeurs fondamentales qui
-                    définissent notre approche éducative. Nous nous engageons
-                    à assurer une rémunération équitable pour les créateurs
-                    de contenu, reconnaissant la qualité de leur travail. </p><br>
-                <p>Favorisant l'autonomie d'apprentissage, notre plateforme
-                    offre la flexibilité nécessaire pour explorer divers
-                    sujets. La transparence est au cœur de notre démarche,
-                    garantissant une clarté totale sur les formations que
-                    les instructeurs proposent. Ensemble, ces valeurs forment
-                    le socle d'une éducation enrichissante et équitable,
-                    guidant notre mission d'offrir des opportunités
-                    d'apprentissage de qualité.</p>
+                <p>
+                    Chez Klivio, nous défendons des valeurs fondamentales qui
+                    définissent notre approche éducative. Nous nous engageons à assurer
+                    une rémunération équitable pour les créateurs de contenu,
+                    reconnaissant la qualité de leur travail.
+                </p>
+                <br />
+                <p>
+                    Favorisant l'autonomie d'apprentissage, notre plateforme offre la
+                    flexibilité nécessaire pour explorer divers sujets. La transparence
+                    est au cœur de notre démarche, garantissant une clarté totale sur
+                    les formations que les instructeurs proposent. Ensemble, ces valeurs
+                    forment le socle d'une éducation enrichissante et équitable, guidant
+                    notre mission d'offrir des opportunités d'apprentissage de qualité.
+                </p>
             </div>
 
-
             <div class="rectangle4">
-                <img src="Klivio-CSS/assets/img/logo.png" alt="logo de klivio">
+                <img src="Klivio-CSS/assets/img/logo.png" alt="logo de klivio" />
             </div>
 
             <div class="nous_contacter">
@@ -256,27 +455,24 @@
             </div>
 
             <div class="form_name">
-                <input type="text" placeholder="Nom">
+                <input type="text" placeholder="Nom" />
             </div>
 
             <div class="form_email">
-                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Email" />
             </div>
 
             <div class="votre_message">
                 <textarea name="message" rows="10" cols="30">Votre message </textarea>
             </div>
 
-            <input class="btn_envoyer" type="submit">
+            <input class="btn_envoyer" type="submit" />
         </div>
-
-
     </main>
-
 
     <footer>
         <div class="footer">
-            <img src="Klivio-CSS/assets/img/logo.png" alt="logo de klivio">
+            <img src="Klivio-CSS/assets/img/logo.png" alt="logo de klivio" />
             <div class="mention_legales">
                 <p>Mentions légales</p>
                 <ul>
@@ -290,14 +486,18 @@
             <div class="coordonnees">
                 <p>Coordonnées</p>
                 <ul>
-                    <li>1 place république,<br>75003 Paris</li>
+                    <li>1 place république,<br />75003 Paris</li>
                     <li>01.02.03.04.05</li>
                     <li>contact@klivio.fr</li>
                 </ul>
             </div>
 
-            <button class="boutton_connexion_footer" type="button">Connexion</button>
-            <button class="boutton_inscription_footer" type="button">Inscription</button>
+            <button class="boutton_connexion_footer" type="button">
+                Connexion
+            </button>
+            <button class="boutton_inscription_footer" type="button">
+                Inscription
+            </button>
 
             <div class="copyright">
                 <p>© Klivio - 2025</p>
@@ -305,17 +505,13 @@
 
             <div class="suivez_nous">
                 <p>Suivez - nous</p>
-                <img src="/version_css/Klivio-CSS/assets/icons/facebook.svg" alt="facebook icon">
-                <img src="/version_css/Klivio-CSS/assets/icons/x.svg" alt="x icon">
-                <img src="/version_css/Klivio-CSS/assets/icons/insta.svg" alt="insta icon">
-                <img src="/version_css/Klivio-CSS/assets/icons/Linkedin.svg" alt="linkedin icon">
+                <img src="/version_css/Klivio-CSS/assets/icons/facebook.svg" alt="facebook icon" />
+                <img src="/version_css/Klivio-CSS/assets/icons/x.svg" alt="x icon" />
+                <img src="/version_css/Klivio-CSS/assets/icons/insta.svg" alt="insta icon" />
+                <img src="/version_css/Klivio-CSS/assets/icons/Linkedin.svg" alt="linkedin icon" />
             </div>
-
         </div>
-
     </footer>
-
-
 </body>
 
 </html>
